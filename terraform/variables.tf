@@ -31,14 +31,18 @@ variable "PATH_TO_BASTION_PUBLIC_KEY" {
   type = string
 }
 
-variable "CD_DEPLOYMENT_GROUP" {
-  type = string
-}
-
 variable "VPC_PREFIX" {
   type = string
 }
 
 variable "APP_PORT" {
   type = number
+}
+
+variable "ENVIRONMENT" {
+  type = string
+}
+
+variable "CD_DEPLOYMENT_GROUP" {
+  type = string
 }
