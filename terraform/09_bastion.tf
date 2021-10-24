@@ -12,7 +12,7 @@ resource "aws_instance" "bastion" {
   instance_type   = "t2.micro"
   key_name        = aws_key_pair.aws_bastion_key.key_name
   subnet_id       = aws_subnet.public_subnet_1.id
-  security_groups = [aws_security_group.bastion_sg.id]
+  vpc_security_group_ids = [aws_security_group.bastion_sg.id]
 
   tags = {
     Name = "${var.TAG_PREFIX}-bastion"

@@ -46,3 +46,7 @@ variable "ENVIRONMENT" {
 variable "CD_DEPLOYMENT_GROUP" {
   type = string
 }
+
+variable "APP_NAME" {
+  type = string
+}
