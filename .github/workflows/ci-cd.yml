@@ -38,7 +38,7 @@ jobs:
       matrix:
         python-version: [3.8]
         node-version: ['14.x']
-        appname: ['aws-codedeploy']
+        appname: ['cbeltran-staging-app']
         deploy-group: ['cbeltran-staging']
         s3-bucket: ['cbeltran20211024']
         s3-filename: ['staging-aws-codedeploy-${{ github.sha }}']
